@@ -42,16 +42,28 @@ Roboto – 400, 500, 700, 900 */
   --border-elements: #eeeeee;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* .visually-hidden {
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -62,17 +74,33 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-} */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
 
 .list {
   list-style: none;
 }
 
 .link {
+  display: inline-block;
+
   text-decoration: none;
 }
 
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -86,6 +114,14 @@ body {
 
 .title {
   color: var(--title-text-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid tomato;
 }
 
 /* Хедер */
@@ -136,14 +172,20 @@ body {
 /* Основной контент */
 /* Герой */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
   background-color: var(--dark-background-color);
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -151,12 +193,15 @@ body {
 }
 
 .button.primary {
+  padding: 10px 32px;
+
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
 
   color: var(--button-text-colour);
   background-color: var(--accent-color);
+  box-shadow: 0 4px 4px #00000026;
 }
 
 .button.primary:hover,
@@ -166,7 +211,14 @@ body {
 
 /* Секции */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -178,6 +230,8 @@ body {
 /* Особенности */
 
 .feature .title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.13;
@@ -190,16 +244,24 @@ body {
 
 /* Чем мы занимаемся */
 
+.service-section {
+  padding-top: 0;
+}
+
 /* Наша команда */
 .section.team {
   background-color: var(--light-background-color);
 }
 
 .team > .list-item {
+  padding-bottom: 30px;
+
   background-color: var(--primary-background-color);
 }
 
 .team .title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -214,11 +276,16 @@ body {
 
 /* Футер */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--dark-background-color);
 }
 
 /* Лого */
 .logo.dark {
+  margin-bottom: 20px;
+
   color: var(--dark-logo-color);
 }
 
@@ -230,6 +297,10 @@ body {
 .adress.list {
   font-style: normal;
 }
+
+/* ! Переглянути стилізацію відступів
+.adress > .list-item {
+} */
 
 .adress .link {
   line-height: 1.71;
@@ -259,6 +330,7 @@ body {
 .button.secondary:focus {
   color: var(--button-text-colour);
   background-color: var(--accent-color);
+  box-shadow: 0 3px 1px #0000001a, 0 1px 2px #00000014, 0 2px 2px #0000001f;
 }
 
 /* Список проектов */
