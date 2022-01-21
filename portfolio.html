@@ -24,20 +24,22 @@
   <body>
     <!-- Хедер -->
     <header>
-      <div class="container">
-        <nav>
-          <a class="logo link" href="./"> <span class="logo-accent">Web</span>Studio </a>
-        
+      <div class="container main-header">
+        <nav class="main-nav">
+          <a class="logo position link" href="./"> <span class="logo-accent">Web</span>Studio </a>
+
           <ul class="site-nav list">
-            <li><a class="link current" href="./index.html">Студия</a></li>
-            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link" href="">Контакты</a></li>
+            <li class="list-item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="list-item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+            <li class="list-item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
-        
+
         <ul class="contact list">
-          <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="list-item">
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="list-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -48,69 +50,95 @@
         <div class="container">
           <h1 class="section-title visually-hidden">Портфолио</h1>
           <!-- Кнопки -->
-          <ul class="buttons list">
-            <li>
+          <ul class="filter list">
+            <li class="list-item">
               <button class="button secondary" type="button">Все</button>
             </li>
-            <li>
+            <li class="list-item">
               <button class="button secondary" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="list-item">
               <button class="button secondary" type="button">Приложения</button>
             </li>
-            <li>
+            <li class="list-item">
               <button class="button secondary" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="list-item">
               <button class="button secondary" type="button">Маркетинг</button>
             </li>
           </ul>
           <!-- Список проектов -->
           <ul class="project list">
-            <li>
-              <img src="./images/portfolio-1.jpg" alt="На экране ноутбука главная страница сайта" width="370" />
-              <h2 class="title">Технокряк</h2>
-              <p class="text">Веб-сайт</p>
+            <li class="list-item">
+              <img
+                src="./images/portfolio-1.jpg"
+                alt="На экране ноутбука главная страница сайта"
+                width="370"
+              />
+              <div class="project-container">
+                <h2 class="title">Технокряк</h2>
+                <p class="text">Веб-сайт</p>
+              </div>
             </li>
-            <li>
+            <li class="list-item">
               <img src="./images/portfolio-2.jpg" alt="Два баскетболиста" width="370" />
-              <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-              <p class="text">Дизайн</p>
+              <div class="project-container">
+                <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                <p class="text">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="list-item">
               <img src="./images/portfolio-3.jpg" alt="Логотип ресторана" width="370" />
-              <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="text">Приложение</p>
+              <div class="project-container">
+                <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="text">Приложение</p>
+              </div>
             </li>
-            <li>
+            <li class="list-item">
               <img src="./images/portfolio-4.jpg" alt="Наушники закрытого типа" width="370" />
-              <h2 class="title">Проект <span lang="en">Prime</span></h2>
-              <p class="text">Маркетинг</p>
+              <div class="project-container">
+                <h2 class="title">Проект <span lang="en">Prime</span></h2>
+                <p class="text">Маркетинг</p>
+              </div>
             </li>
-            <li>
+            <li class="list-item">
               <img src="./images/portfolio-5.jpg" alt="Две картонные коробки" width="370" />
-              <h2 class="title">Проект <span lang="en">Boxes</span></h2>
-              <p class="text">Приложение</p>
+              <div class="project-container">
+                <h2 class="title">Проект <span lang="en">Boxes</span></h2>
+                <p class="text">Приложение</p>
+              </div>
             </li>
-            <li>
-              <img src="./images/portfolio-6.jpg" alt="На экране монитора главная страница сайта" width="370" />
-              <h2 class="title" lang="en">Inspiration has no Borders</h2>
-              <p class="text">Веб-сайт</p>
+            <li class="list-item">
+              <img
+                src="./images/portfolio-6.jpg"
+                alt="На экране монитора главная страница сайта"
+                width="370"
+              />
+              <div class="project-container">
+                <h2 class="title" lang="en">Inspiration has no Borders</h2>
+                <p class="text">Веб-сайт</p>
+              </div>
             </li>
-            <li>
+            <li class="list-item">
               <img src="./images/portfolio-7.jpg" alt="Раскрытая книга" width="370" />
-              <h2 class="title">Издание <span lang="en">Limited Edition</span></h2>
-              <p class="text">Дизайн</p>
+              <div class="project-container">
+                <h2 class="title">Издание <span lang="en">Limited Edition</span></h2>
+                <p class="text">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="list-item">
               <img src="./images/portfolio-8.jpg" alt="Бирка с названием компании" width="370" />
-              <h2 class="title">Проект <span lang="en">LAB</span></h2>
-              <p class="text">Маркетинг</p>
+              <div class="project-container">
+                <h2 class="title">Проект <span lang="en">LAB</span></h2>
+                <p class="text">Маркетинг</p>
+              </div>
             </li>
-            <li>
+            <li class="list-item">
               <img src="./images/portfolio-9.jpg" alt="Человек печатает на ноутбуке" width="370" />
-              <h2 class="title" lang="en">Growing Business</h2>
-              <p class="text">Приложение</p>
+              <div class="project-container">
+                <h2 class="title" lang="en">Growing Business</h2>
+                <p class="text">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -121,11 +149,16 @@
     <footer class="footer">
       <div class="container">
         <a class="logo dark link" href="./"> <span class="logo-accent">Web</span>Studio </a>
-        
+
         <address>
           <ul class="adress list">
             <li class="list-item">
-              <a class="link" href="https://goo.gl/maps/HY3VaiPeCCJGnbPLA" target="_blank" rel="noopener">
+              <a
+                class="link"
+                href="https://goo.gl/maps/HY3VaiPeCCJGnbPLA"
+                target="_blank"
+                rel="noopener"
+              >
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
